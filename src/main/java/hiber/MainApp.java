@@ -34,7 +34,9 @@ public class MainApp {
          System.out.println("Car = "+user.getCar());
          System.out.println();
       }
-
+      
+      userService.listUsersByCar("Nissan", 777).forEach(System.out::println);
+      
       context.close();
    }
 }
